@@ -32,17 +32,12 @@ user-registration
    cd user-registration
    ```
 
-2. **Install dependencies**:
+2. Docker compose:
    ```bash
-   npm install
+   docker-compose up
    ```
 
-3. **Run the application**:
-   ```bash
-   node src/app.js
-   ```
-
-4. **Access the application**:
+3. **Access the application**:
    Open your browser and go to `http://localhost:3000/register` to access the registration form.
 
 ## Usage
@@ -53,9 +48,5 @@ user-registration
 ## Dependencies
 
 - Express
-- Body-parser
-- Any database libraries (e.g., mongoose for MongoDB)
-
-## License
-
-This project is licensed under the MIT License.
+- python-flask
+- pymongo
