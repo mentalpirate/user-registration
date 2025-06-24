@@ -1,6 +1,6 @@
 FROM python:3.9-slim-buster
 # copy work dir 
-COPY backend /app
+COPY . /app
 # set work dir 
 WORKDIR /app
 # install dependencies
