@@ -37,7 +37,7 @@ const RegistrationForm = () => {
 
         const userData = { username, email, password };
         try {
-            const response = await fetch('http://localhost:5000/submit', {
+            const response = await fetch('http://3.228.51.209/submit', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -62,7 +62,7 @@ const RegistrationForm = () => {
         setLoading(true);
         setError('');
         try {
-            const response = await fetch('http://localhost:5000/view');
+            const response = await fetch('http://3.228.51.209:5000/view');
             if (!response.ok) throw new Error('Failed to fetch users');
             const data = await response.json();
             setUsers(data);
