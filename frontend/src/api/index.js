@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000'; // Adjust the base URL as needed
+const API_URL = 'http://3.228.51.209:5000'; // Adjust the base URL as needed
 
 export const submitUser = async (userData) => {
     try {
