@@ -29,3 +29,4 @@ jobs:
     - name: push backend to docker registry
       run: docker push mentalpirate/flask-backend:$(date +%s)
     - name: push frontend to docker registry
+      run: docker push mentalpirate/express-frontend:$(date +%s)
