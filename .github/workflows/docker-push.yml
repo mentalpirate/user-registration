@@ -16,7 +16,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker build --tag mentalpirate/flask-backend:$(date +%s) backend/Dockerfile
+      run: docker build --tag mentalpirate/flask-backend:$(date +%s) backend
     - name: Log in to Docker Hub
       uses: docker/login-action@v3
       with:
